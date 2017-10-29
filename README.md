@@ -4,12 +4,12 @@ I analyze the most popular authors and articles in this newspaper site. I also f
 of requesting from the website.
 
 ## Install
-1. This program is only compatible for **python 3**
+1. This program is only compatiable for **python 3**
 2. You can visit the website [here](https://www.python.org/downloads/release/python-352/) to download python3
 3. Please make sure you have [vagrant](https://www.vagrantup.com/downloads.html) and 
-[virtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1).
+[VirtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1).
 
-## Creat views
+## Create views
 In order to query data properly, you have to create several views in the database.
 ```
 	create view all_requests as select date(time) as date, count(date(time)) as all_num from log group by date;
